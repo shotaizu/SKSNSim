@@ -10,11 +10,12 @@
 all: main library
 	@echo "[SKSNSim] Done!"
 
-
+ifndef CI
 ifndef SKOFL_ROOT
   SKOFL_ROOT = ../..
 endif
 include $(SKOFL_ROOT)/config.gmk
+endif
 
 CXX=g++
 CXXFLAGS += -DNO_EXTERN_COMMON_POINTERS #-DDEBUG
