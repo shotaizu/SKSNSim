@@ -57,7 +57,7 @@ library: lib lib/libSKSNSim.so
 doc: doc/guide_sksnsim.pdf
 
 doc/guide_sksnsim.pdf: doc/guide_sksnsim.texi
-	cd doc && pwd && texi2any --pdf guide_sksnsim.texi && cd ../
+	cd doc && pwd && texi2pdf guide_sksnsim.texi && cd ../
 
 test:
 	@echo "MAINSRCS      "$(MAINSRCS)
