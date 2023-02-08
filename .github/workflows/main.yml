@@ -10,6 +10,6 @@ jobs:
     name: generate PDF documents
     runs-on: ubuntu-22.04
     steps:
-    - run: pwd && ls && cat GNUmakefile
+    - run: ls
     - run: make doc
     
